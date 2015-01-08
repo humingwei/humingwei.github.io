@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "初尝Github+Jekyll搭建个人主页"
+date:   2015-01-08 18:02:20
+categories: jekyll
+---
+
+
 **使用Github+Jekyll搭建个人主页**
 
 
