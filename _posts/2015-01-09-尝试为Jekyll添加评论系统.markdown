@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "尝试为Jekyll添加评论系统"
+date:   2015-01-09 11:41:20
+categories: jekyll
+---
+
+* 使用第三方账号登录[多说]账号
+* 添加新站点（此处填写时有几点注意事项，稍后补齐）
+* 复制下面通用代码到 '_layout/post.html' 中的最后面（下面是我的通用代码，每人不一样的地方在 'short_name' 那里，记得替换成你自己的 'short_name'）
+
+{% highlight javascript %}
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="humingwei.github.io{{page.url}}"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"humingwei"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+{% endhighlight %}
+
+* 保存再提交到Github上，刷一下页面，评论框就出现了
+
+
+[多说]: http://www.duoshuo.com
