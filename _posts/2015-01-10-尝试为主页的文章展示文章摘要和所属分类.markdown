@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "尝试为主页的文章展示文章摘要和所属分类"
+date:   2015-01-10 23:34:15
+categories: jekyll
+---
+
+* 为首页显示的文章展示文章摘要
+在 `_config.yml` 文件中添加 `excerpt_separator:[excerpt_separator:]` ,在 `default.html` 的 `<body></body>` 中添加 `{{post.excerpt}}` 。然后在每篇文章中想要展示的摘要的后面到添加 `[excerpt_separator:]` ,在首页就能展示展示每篇文章的摘要，展示的长度截止到所添加的 `[excerpt_separator:]` 之前的内容。
+
+* 为首页的文章展示文章所属分类
+在 `default.html` 的 `<body></body>` 中添加 `{{post.categories}}` ，就能看到每篇文所填写的分类。
+
+（可惜添加的效果不太好看，还在调试中，稍后再push代码上来）
+
