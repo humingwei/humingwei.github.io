@@ -11,4 +11,4 @@ github_username:  humingwei
 markdown: kramdown
 
 # Add excerpt tag
-excerpt_separator:[excerpt_separator]
+excerpt_separator:'[excerpt_separator]'
