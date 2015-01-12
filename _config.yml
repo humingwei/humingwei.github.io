@@ -5,10 +5,10 @@ description: > # Mingwau_Hu的个人博客.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://humingwei.com" # the base hostname & protocol for your site
 #twitter_username: null
-github_username:  humingwei
+github_username: humingwei
 
 # Build settings
 markdown: kramdown
 
 # Add excerpt tag
-excerpt_separator:'[excerpt_separator]'
+excerpt_separator: '[excerpt_separator]'
