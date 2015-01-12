@@ -9,3 +9,6 @@ github_username:  humingwei
 
 # Build settings
 markdown: kramdown
+
+# Add excerpt tag
+excerpt_separator:[excerpt_separator]
