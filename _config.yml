@@ -12,3 +12,6 @@ markdown: kramdown
 
 # Add excerpt tag
 excerpt_separator: '[excerpt_separator]'
+
+#Set highlighter
+highlighter: rouge
