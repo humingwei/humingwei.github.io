@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "尝试添加文章分类页面"
+date:   2015-01-13 22:14:42
+categories: jekyll
+---
+
+## 开个帖子总结和Jekyll相关的各种问题以及解决办法。
+
+(不过最好的老师还是github和stackoverflow)
+
+* Liquid Exception: cannot load such file -- yajl/2.1/yajl in _posts/2015-01-08-welcome-to-jekyll.markdown/#excerpt
+此问题疑似在windown 32位系统下频现，解决办法是先安装`rouge`语法高亮的包`gem install rouge`，然后在_config.yml文件里添加`highlighter: rouge`，就能解决。
+（201501132215update）
