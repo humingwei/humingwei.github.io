@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "尝试添加文章分类页面"
+title:  "Jekyll相关异常及解决办法"
 date:   2015-01-13 22:14:42
 categories: jekyll
 ---
