@@ -2,7 +2,7 @@
 layout: post
 title:  "最近大婚忙cry了~下周开始继续折腾~"
 date:   2015-01-13 22:14:42
-categories: jekyll
+categories: Others
 ---
 
 ## RT.
