@@ -8,7 +8,16 @@ categories: jekyll
 ## 开个帖子总结和Jekyll相关的各种问题以及解决办法。
 
 (不过最好的老师还是github和stackoverflow)
+### Jekyll搭建Github Page相关问题官方解决方法传送门：
+https://help.github.com/articles/using-jekyll-with-pages
 
+
+### 201501132215_update
 * Liquid Exception: cannot load such file -- yajl/2.1/yajl in _posts/2015-01-08-welcome-to-jekyll.markdown/#excerpt
-此问题疑似在windown 32位系统下频现，解决办法是先安装`rouge`语法高亮的包`gem install rouge`，然后在_config.yml文件里添加`highlighter: rouge`，就能解决。
-（201501132215update）
+此问题疑似在windown7 32位系统下频现，解决办法是先安装`rouge`语法高亮的包`gem install rouge`，然后在`_config.yml`文件里添加`highlighter: rouge`，就能解决。
+
+
+### 2015012617043_update
+* Github page build failed.
+结婚前的那段时间常收到邮件说“Github page build failed.”，开始没怎么在意但在本地调试无任何异常。没有任何error log，于是还是google各种导致build failed的原因。按照网上的说法，有的是文章的编码或时间格式不对，统一修改成`utf-8`后依旧构建失败、时间格式没发现问题（倒是发现几处时间填的不对的低级问题~囧）修改后发现，还是build failed。然后继续各种google各种翻Github page的资料各种的倒腾各种的改，无一例外仍旧扑街。。。
+好吧，最后看到有人提了个解决方法：Send email to Github to get the error log.（不想，最后还是要麻烦外国友人来帮忙解决~），一封不算太蹩脚的英文email十分忐忑发的出后在临近下班时得到了回复，绝对想不到居然就是13日（就是本帖上面那次改动）修改在本地语法导致的，错误信息：`Jekyll doesn't have Rouge installed by default and Rouge isn't supported on GitHub Pages.`。查了一下，Jekyll搭的Github Page只支持`pygments`这个语法高亮的插件，于是把`_config.yml`文件里的`highlighter: rouge`又改成了`highlighter: pygments`。然后提交，问题总算解决了！
