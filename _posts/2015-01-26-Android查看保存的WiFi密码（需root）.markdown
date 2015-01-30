@@ -12,13 +12,13 @@ categories: Android
 1、想查看Android手机所保存的WiFi密码，首先要保证设备是root过能拿到`su`（superuser）权限。
 2、电脑上配有Android的开发环境，确保adb能用。
 3、在命令行下输入一下命令
-```bash
+{% highlight html %}
 shell@android:/ $ su
 su
 shell@android:/ # cat -b /data/misc/wifi/wpa_supplicant.conf
-```
+{% endhighlight %}
 4、然后设备里所保存的WiFi信息和密码都统统列到下面了
-```bash
+{% highlight html %}
 cat /data/misc/wifi/wpa_supplicant.conf
 ctrl_interface=DIR=/data/misc/wpa_supplica
 update_config=1
@@ -63,6 +63,6 @@ network={
         pcsc="none"
         priority=5
 }
-```
+{% endhighlight %}
 
 ### 引申一下，现在好多号称免费连全国WiFi的应用，据说也是获取到用户的WiFi密码然后上传到服务器再share给用户。回头看看有没有不root也拿的到设备里WiFi密码的方法么~~#
